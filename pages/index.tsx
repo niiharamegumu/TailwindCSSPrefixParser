@@ -35,7 +35,7 @@ const Home: NextPage = () => {
     <>
       <Seo
         pageTitle="TOP"
-        pageDescription="TailwindCSSのPrefixをクラス名の付与します。"
+        pageDescription="TailwindCSSのPrefixを各クラス名の先頭に付与します。"
         pageImg="/ogp.png"
         pageImgWidth={1280}
         pageImgHeight={640}
