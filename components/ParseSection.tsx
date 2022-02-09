@@ -22,7 +22,9 @@ export const ParseSection: VFC = () => {
   const copyTextToClipboard = (text: string) => {
     navigator.clipboard.writeText(text).then(
       function () {
-        alert("clipboardにコピーしました");
+        text.length > 0
+          ? alert("clipboardにコピーしました")
+          : alert("Resultの中身が空です。");
       },
       function (err) {
         alert(err);
@@ -61,13 +63,13 @@ export const ParseSection: VFC = () => {
           </p>
           <input
             type="text"
-            className="border border-black w-full p-1 mb-4"
+            className="border border-black w-full p-1 mb-4 h-10 md:h-auto"
             placeholder="Prefix"
             onChange={onChangePrefix}
             value={prefix}
           />
           <textarea
-            className="h-1/2 border border-black w-full p-1 mb-4"
+            className="border border-black w-full p-1 mb-4 h-96 md:h-1/2"
             placeholder="HTMLを貼り付けて下さい。"
             onChange={onChangeInputHtml}
             value={inputHtml}
@@ -91,7 +93,7 @@ export const ParseSection: VFC = () => {
             Copy
           </button>
           <textarea
-            className="h-full border border-black p-1"
+            className="border border-black p-1 h-96 md:h-full"
             placeholder="ここに結果が入ります。"
             value={parsedHtml}
             readOnly
