@@ -1,35 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TailwindCSS Prefix Parser
 
-## Getting Started
+## 説明
 
-First, run the development server:
+指定した Prefix を TailwindCSS の各クラス名の先頭に置き換えるツール。
 
-```bash
-npm run dev
-# or
-yarn dev
+基本的な TailwindCSS のクラス名に対応しております。
+
+独自で指定した TailwindCSS クラス名には非対応となります。
+
+## 作った背景
+
+Shopify のテーマ開発にて TailwindCSS を導入したは良いものの、既存の CSS を override しないように Prefix をつける必要性がありました。
+
+ただ、開発工数を下げるために様々な TailwindCSS のコンポーネントを使用します。
+
+その際、莫大な置換作業が発生しかえって時間が取られそうなため作成しました。
+
+## サイト
+
+https://twc-prefix-parser.vercel.app/
+
+## 使用方法
+
+① Prefix を決める
+
+```text
+tw-
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+② Input Field に貼り付ける
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```html
+<nav
+  class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center"
+>
+  <a class="mr-5 hover:text-gray-900">First Link</a>
+  <a class="mr-5 hover:text-gray-900">Second Link</a>
+  <a class="mr-5 hover:text-gray-900">Third Link</a>
+  <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+</nav>
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+③ 変換する
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+④Result に Prefix 付きで表示される
 
-## Learn More
+## Requirement
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# tailwindcssPrefixTranspiler
+- TailwindCSS
+- NextJS
+- TS
+- fortawesome
