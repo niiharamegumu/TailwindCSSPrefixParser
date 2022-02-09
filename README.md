@@ -45,6 +45,17 @@ tw-
 
 ④Result に Prefix 付きで表示される
 
+```html
+<nav
+  class="md:tw-mr-auto md:tw-ml-4 md:tw-py-1 md:tw-pl-4 md:tw-border-l md:tw-border-gray-400 tw-flex tw-flex-wrap tw-items-center tw-text-base tw-justify-center"
+>
+  <a class="tw-mr-5 hover:tw-text-gray-900">First Link</a>
+  <a class="tw-mr-5 hover:tw-text-gray-900">Second Link</a>
+  <a class="tw-mr-5 hover:tw-text-gray-900">Third Link</a>
+  <a class="tw-mr-5 hover:tw-text-gray-900">Fourth Link</a>
+</nav>
+```
+
 ## Requirement
 
 - TailwindCSS
