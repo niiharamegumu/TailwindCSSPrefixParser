@@ -9,7 +9,7 @@ export const Footer: VFC = () => {
         <a className="flex title-font font-medium items-center md:justify-start justify-center">
           <span className="ml-3 text-xl">TailwindCSS Prefix Parser</span>
         </a>
-        <p className="text-sm sm:ml-4 sm:pl-4 sm:border-l-2  sm:py-2 sm:mt-0 mt-4">
+        <p className="text-sm sm:ml-4 sm:pl-4 sm:border-l-2  sm:py-2 sm:mt-0 mt-4 text-center">
           © 2022 TailwindCSS Prefix Parser —
           <a
             href="https://twitter.com/knyttneve"
