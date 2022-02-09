@@ -1,14 +1,14 @@
 import { VFC } from "react";
 import Head from "next/head";
 
-interface MetaData {
+type MetaData = {
   pageTitle?: string;
   pageDescription?: string;
   pagePath?: string;
   pageImg?: string;
   pageImgWidth?: number;
   pageImgHeight?: number;
-}
+};
 
 const Seo: VFC<MetaData> = ({
   pageTitle,
