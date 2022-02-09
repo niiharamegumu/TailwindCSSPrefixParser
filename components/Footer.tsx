@@ -17,25 +17,25 @@ export const Footer: VFC = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            by niihara megumu.
+            by megumu.
           </a>
         </p>
-        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <div className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a
             href="https://github.com/niiharamegumu"
             target={`_blank`}
-            className="ml-3 cursor-pointer"
+            className="ml-3 cursor-pointer w-8 h-8"
           >
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
           <a
             href="https://twitter.com/lmgm_m"
             target={`_blank`}
-            className="ml-3 cursor-pointer text-blue-400"
+            className="ml-3 cursor-pointer text-blue-400 w-8 h-8"
           >
             <FontAwesomeIcon icon={faTwitter} size="2x" />
           </a>
-        </span>
+        </div>
       </div>
     </footer>
   );
