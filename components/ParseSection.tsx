@@ -44,16 +44,16 @@ export const ParseSection: VFC = () => {
             Prefixを各クラス名に付与します。
           </p>
           <p>
-            Ex.Input :{" "}
+            Input :{" "}
             <span>
               {'<a class="text-gray-600 hover:text-gray-800">First Link</a>'}
             </span>
           </p>
           <p>
-            Ex.Prefix : <span className="text-red-500">tw-</span>
+            Prefix : <span className="text-red-500">tw-</span>
           </p>
           <p className="mb-4">
-            Ex.Output : <span>{'<a class="'}</span>
+            Output : <span>{'<a class="'}</span>
             <span className="text-red-500">{"tw-"}</span>
             <span>{"text-gray-600 hover:"}</span>
             <span className="text-red-500">{"tw-"}</span>
